@@ -1,92 +1,29 @@
-# Geometry Dash Clone - Python Game
+# PythonPlantsVsZombies
+  A simple PlantsVsZombies game. <br>
+  `It's only for personal learning and noncommercial use. If this game infringes the copyright, please let me know.`
+* implement plants: sunflower, peashooter, wallnut, snowpeashooter, cherrybomb, threepeashooter, chomper, puffshroom, potatomine, spikeweed, scaredyshroom, squash, scaredyshroom, jalapeno, sunShroom, iceShroom, hypnoShroom.
+* implement zombies: zombie, flagzombie, coneheadzombie, bucketheadzombie, newspaperzombie.
+* use json file to store level data (e.g.position and time of zombies, background info)
+* support to select plant cards at the beginning of the level
+* support day level, night level, moving card select level and wallnut bowling level
 
-Welcome to the **Geometry Dash Clone** project! This game is developed in Python using the `pygame` library and mimics the mechanics of the popular Geometry Dash game.
+# Requirement
+* Python 3.7 
+* Notice: python version 3.7 is advisable, but not required. For LINUX: if your Linux system has a preinstalled python 3+, it's ok to run this game. Updating to python 3.7 directly may break LINUX Mint.
+* Python-Pygame 1.9
 
-![Game Screenshot](https://via.placeholder.com/800x400.png?text=Screenshot+Placeholder)
+# How To Start Game
+$ python main.py
 
----
+# How to Play
+* use mouse to collect sun, select the plant cards and seed the plant 
+* you can set the start level by changing START_LEVEL_NUM value in source/constants.py
+  * level 1 and 2：day level
+  * level 3: night level
+  * level 4: moving card select level
+  * level 5: wallnut bowling level
 
-## Features
-- **Smooth Gameplay**: Auto-moving character and obstacle dodging.
-- **Physics**: Gravity and jumping mechanics.
-- **Graphics**: Replaceable textures for characters, obstacles, and backgrounds.
-- **Level**: The first level mimics the original Geometry Dash game.
-- **Replayability**: Restart the game after collision.
+# Demo
+![demo1](https://raw.githubusercontent.com/marblexu/PythonPlantsVsZombies/master/demo/demo1.jpg)
+![demo2](https://raw.githubusercontent.com/marblexu/PythonPlantsVsZombies/master/demo/demo2.jpg)
 
----
-
-## Requirements
-To run the game, you need:
-- Python 3.8+
-- `pygame` library
-
-Install `pygame` by running:
-```bash
-pip install pygame
-How to Play
-Run the Game:
-
-Clone the repository or download the code.
-Save images for the player, obstacles, and background in the resources folder.
-Controls:
-
-Press Space to jump.
-Avoid obstacles by timing your jumps correctly.
-Restart:
-
-If you collide with an obstacle, press R to restart the game.
-Folder Structure
-bash
-Copy code
-project/
-│
-├── main.py               # The main game logic
-├── resources/            # Folder for images and assets
-│   ├── textures/         # Subfolder for textures (e.g., walls, spikes)
-│   │   ├── 1.png         # Example texture file
-│   │   ├── 2.png         # Example texture file
-│   │   └── ...
-│   └── player.png        # Player sprite
-│   └── background.png    # Background image
-│
-└── README.md             # This README file
-Adding Photos
-Replace the placeholder assets with your own images:
-
-Player:
-Save an image as player.png in the resources folder.
-Obstacles:
-Save obstacle images as 1.png, 2.png, etc., in the resources/textures folder.
-Background:
-Save a background image as background.png.
-Gameplay Example
-Here’s an example screenshot of the game in action:
-
-
-Contributing
-Contributions are welcome! If you’d like to improve this game or add new features, feel free to fork the repository and submit a pull request.
-
-License
-This project is licensed under the MIT License.
-
-Contact
-For any questions or issues, feel free to contact:
-
-Your Name
-Your Email
-vbnet
-Copy code
-
----
-
-### How to Use This
-1. **Save as `README.md`**:
-   Copy the above text into a file named `README.md` in your project folder.
-
-2. **Replace Placeholder URLs**:
-   - Replace `https://via.placeholder.com/...` with real URLs of screenshots or images hosted online (e.g., Imgur, GitHub assets).
-
-3. **Upload to Repository**:
-   Add the `README.md` to your repository, and it will automatically render when viewed on platforms like GitHub.
-
-Let me know if you need help with hosting images or formatting further!
